@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/core/base_state/base_state.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1756054525408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1756054525408,
+            "name": "Commit-0",
+            "content": "sealed class BaseState {}\r\n\r\nclass BaseInitialState extends BaseState {}\r\n\r\nclass BaseSuccessState<T> extends BaseState {\r\n  BaseSuccessState({this.data});\r\n  T? data;\r\n}\r\n\r\nclass BaseLoadingState extends BaseState {}\r\n\r\nclass BaseHideLoadingState extends BaseState {}\r\n\r\nclass BaseNavigationState<T> extends BaseState {\r\n  BaseNavigationState(this.route, [this.arguments]);\r\n  T? arguments;\r\n  String route;\r\n}\r\n\r\nclass BaseErrorState extends BaseState {\r\n  BaseErrorState({required this.errorMessage, this.exception});\r\n  String errorMessage;\r\n  Exception? exception;\r\n}\r\n"
+        }
+    ]
+}

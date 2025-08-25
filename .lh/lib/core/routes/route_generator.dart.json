@@ -1,0 +1,42 @@
+{
+    "sourceFile": "lib/core/routes/route_generator.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1756055772161,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1756055777929,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-class \n\\ No newline at end of file\n+class RouteGenerator {}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1756055788541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-class RouteGenerator {}\n\\ No newline at end of file\n+class RouteGenerator {\r\n+  \r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1756055797022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,3 @@\n+class RouteGenerator {\r\n+  static Them\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1756055802238,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,3 @@\n+class RouteGenerator {\r\n+  static Themedata \r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1756055813837,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n class RouteGenerator {\r\n-  static Themedata light\r\n+  static ThemeData light\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1756055819449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,5 @@\n+import 'package:flutter/material.dart';\r\n+\r\n class RouteGenerator {\r\n   static ThemeData light\r\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1756055772161,
+            "name": "Commit-0",
+            "content": "class "
+        }
+    ]
+}

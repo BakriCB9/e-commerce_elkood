@@ -1,0 +1,34 @@
+{
+    "sourceFile": "lib/core/network/common/api_result.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1756055589593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1756055600406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,6 @@\n \r\n class FailureResult<T> extends Result<T> {\r\n   Exception exception;\r\n   FailureResult(this.exception);\r\n-  \r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1756058476248,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,7 @@\n   SuccessResult(this.data);\r\n }\r\n \r\n class FailureResult<T> extends Result<T> {\r\n-  Exception exception;\r\n+  String  exception;\r\n   FailureResult(this.exception);\r\n-\r\n }\r\n"
+                },
+                {
+                    "date": 1756058485056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,7 @@\n   SuccessResult(this.data);\r\n }\r\n \r\n class FailureResult<T> extends Result<T> {\r\n-  String  e;\r\n+  String  er;\r\n   FailureResult(this.exception);\r\n }\r\n"
+                },
+                {
+                    "date": 1756058497908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,11 @@\n+sealed class Result<T> {}\r\n+\r\n+class SuccessResult<T> extends Result<T> {\r\n+  T data;\r\n+  SuccessResult(this.data);\r\n+}\r\n+\r\n+class FailureResult<T> extends Result<T> {\r\n+  String  errorMessage;\r\n+  FailureResult(this.errorMessage);\r\n+}\r\n"
+                }
+            ],
+            "date": 1756055589593,
+            "name": "Commit-0",
+            "content": "sealed class Result<T> {}\r\n\r\nclass SuccessResult<T> extends Result<T> {\r\n  T data;\r\n  SuccessResult(this.data);\r\n}\r\n\r\nclass FailureResult<T> extends Result<T> {\r\n  Exception exception;\r\n  FailureResult(this.exception);\r\n  \r\n\r\n}\r\n"
+        }
+    ]
+}

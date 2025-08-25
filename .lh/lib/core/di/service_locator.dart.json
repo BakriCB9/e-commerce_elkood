@@ -1,0 +1,22 @@
+{
+    "sourceFile": "lib/core/di/service_locator.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1756054953129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1756054965840,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import 'package:get_it/get_it.dart';\r\n import 'package:injectable/injectable.dart';\r\n-import 'package:fitness_app/core/di/service_locator.config.dart';\r\n+import 'service_locator.config.dart';\r\n \r\n final serviceLocator = GetIt.instance;\r\n \r\n @InjectableInit()\r\n"
+                }
+            ],
+            "date": 1756054953129,
+            "name": "Commit-0",
+            "content": "import 'package:get_it/get_it.dart';\r\nimport 'package:injectable/injectable.dart';\r\nimport 'package:fitness_app/core/di/service_locator.config.dart';\r\n\r\nfinal serviceLocator = GetIt.instance;\r\n\r\n@InjectableInit()\r\nFuture<void> configureDependencies() async => serviceLocator.init();\r\n"
+        }
+    ]
+}

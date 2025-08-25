@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/core/network/remote/app_exception.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1756056770226,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1756056770226,
+            "name": "Commit-0",
+            "content": "abstract class ApiException implements Exception {\r\n  final String message;\r\n  final int? statusCode;\r\n\r\n  const ApiException({required this.message, this.statusCode});\r\n\r\n  @override\r\n  String toString() => message;\r\n}\r\n\r\nclass InternetConnectionException extends ApiException {\r\n  const InternetConnectionException({\r\n    required super.message,\r\n  });\r\n}\r\n\r\nclass ApiTimeoutException extends ApiException {\r\n  const ApiTimeoutException({\r\n    required super.message,\r\n  });\r\n}\r\n\r\nclass BadRequestException extends ApiException {\r\n  const BadRequestException({\r\n    required super.message,\r\n    super.statusCode,\r\n  });\r\n}\r\n\r\nclass UnauthorizedException extends ApiException {\r\n  const UnauthorizedException({\r\n    required super.message,\r\n    super.statusCode,\r\n  });\r\n}\r\n\r\nclass ForbiddenException extends ApiException {\r\n  const ForbiddenException({\r\n    required super.message,\r\n    super.statusCode,\r\n  });\r\n}\r\n\r\nclass NotFoundException extends ApiException {\r\n  const NotFoundException({\r\n    required super.message,\r\n    super.statusCode,\r\n  });\r\n}\r\n\r\nclass InternalServerErrorException extends ApiException {\r\n  const InternalServerErrorException({\r\n    required super.message,\r\n    super.statusCode,\r\n  });\r\n}\r\n\r\nclass CertificateException extends ApiException {\r\n  CertificateException({\r\n    required super.message,\r\n  });\r\n}\r\n\r\nclass RequestCancelledException extends ApiException {\r\n  const RequestCancelledException({\r\n    required super.message,\r\n  });\r\n}\r\n\r\nclass UnknownApiException extends ApiException {\r\n  const UnknownApiException({\r\n    required super.message,\r\n  });\r\n}\r\n\r\nclass DataParsingException extends ApiException {\r\n  const DataParsingException({\r\n    required super.message,\r\n  });\r\n}\r\n"
+        }
+    ]
+}

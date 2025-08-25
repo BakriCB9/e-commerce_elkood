@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/core/network/remote/dio_module.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1756056796349,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1756056796349,
+            "name": "Commit-0",
+            "content": "import 'package:dio/dio.dart';\r\nimport 'package:injectable/injectable.dart';\r\nimport 'package:pretty_dio_logger/pretty_dio_logger.dart';\r\n\r\nimport 'api_constants.dart';\r\n\r\n@module\r\nabstract class DioModule {\r\n  @lazySingleton\r\n  Dio provideDio() {\r\n    final dio = Dio();\r\n    dio.options = BaseOptions(\r\n      connectTimeout: const Duration(seconds: 10),\r\n      receiveTimeout: const Duration(seconds: 10),\r\n      baseUrl: ApiConstants.baseUrl,\r\n    );\r\n    dio.interceptors.add(providerInterceptor());\r\n    return dio;\r\n  }\r\n\r\n  @lazySingleton\r\n  PrettyDioLogger providerInterceptor() {\r\n    return PrettyDioLogger(\r\n      error: true,\r\n      request: true,\r\n      requestBody: true,\r\n      requestHeader: true,\r\n      responseBody: true,\r\n      responseHeader: true,\r\n    );\r\n  }\r\n}\r\n"
+        }
+    ]
+}

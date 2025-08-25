@@ -1,0 +1,46 @@
+{
+    "sourceFile": "lib/core/constant/app_colors.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1756054853008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1756054859400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-clas \n\\ No newline at end of file\n+class AppColor\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1756054874230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-class AppColor\n\\ No newline at end of file\n+class AppColors{\r\n+  \r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1756071082593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,15 @@\n class AppColors{\r\n-  \r\n+  static const MaterialColor pink = MaterialColor(0xFFD2166A, <int, Color>{\r\n+    baseColor: Color(0xFFF6D2E1),\r\n+    colorCode10: Color(0xFFF0B4CD),\r\n+    colorCode20: Color(0xFFE98FB5),\r\n+    colorCode30: Color(0xFFE1699C),\r\n+    colorCode40: Color(0xFFDA4483),\r\n+    colorCode50: Color(0xFFD21E6A),\r\n+    colorCode60: Color(0xFFAF1958),\r\n+    colorCode70: Color(0xFF8C1447),\r\n+    colorCode80: Color(0xFF690F35),\r\n+    colorCode90: Color(0xFF460A23),\r\n+    colorCode100: Color(0xFF2A0615),\r\n+  });\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1756071093813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n+import 'package:flutter/material.dart';\r\n+\r\n class AppColors{\r\n   static const MaterialColor pink = MaterialColor(0xFFD2166A, <int, Color>{\r\n     baseColor: Color(0xFFF6D2E1),\r\n     colorCode10: Color(0xFFF0B4CD),\r\n"
+                },
+                {
+                    "date": 1756071136681,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,18 @@\n import 'package:flutter/material.dart';\r\n \r\n class AppColors{\r\n+  static const int baseColor = 1000;\r\n+  static const int colorCode10 = 10;\r\n+  static const int colorCode20 = 20;\r\n+  static const int colorCode30 = 30;\r\n+  static const int colorCode40 = 40;\r\n+  static const int colorCode50 = 50;\r\n+  static const int colorCode60 = 60;\r\n+  static const int colorCode70 = 70;\r\n+  static const int colorCode80 = 80;\r\n+  static const int colorCode90 = 90;\r\n+  static const int colorCode100 = 100;\r\n   static const MaterialColor pink = MaterialColor(0xFFD2166A, <int, Color>{\r\n     baseColor: Color(0xFFF6D2E1),\r\n     colorCode10: Color(0xFFF0B4CD),\r\n     colorCode20: Color(0xFFE98FB5),\r\n"
+                },
+                {
+                    "date": 1756071183684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,11 @@\n   static const int colorCode70 = 70;\r\n   static const int colorCode80 = 80;\r\n   static const int colorCode90 = 90;\r\n   static const int colorCode100 = 100;\r\n+\r\n   \r\n+\r\n   static const MaterialColor pink = MaterialColor(0xFFD2166A, <int, Color>{\r\n     baseColor: Color(0xFFF6D2E1),\r\n     colorCode10: Color(0xFFF0B4CD),\r\n     colorCode20: Color(0xFFE98FB5),\r\n"
+                },
+                {
+                    "date": 1756071253777,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,32 @@\n+import 'package:flutter/material.dart';\r\n+\r\n+class AppColors{\r\n+  static const int baseColor = 1000;\r\n+  static const int colorCode10 = 10;\r\n+  static const int colorCode20 = 20;\r\n+  static const int colorCode30 = 30;\r\n+  static const int colorCode40 = 40;\r\n+  static const int colorCode50 = 50;\r\n+  static const int colorCode60 = 60;\r\n+  static const int colorCode70 = 70;\r\n+  static const int colorCode80 = 80;\r\n+  static const int colorCode90 = 90;\r\n+  static const int colorCode100 = 100;\r\n+\r\n+  static const Color red = Color(0xFFD50000);\r\n+  static const Color white=Color(0xFFF9F9F9);\r\n+\r\n+  static const MaterialColor pink = MaterialColor(0xFFD2166A, <int, Color>{\r\n+    baseColor: Color(0xFFF6D2E1),\r\n+    colorCode10: Color(0xFFF0B4CD),\r\n+    colorCode20: Color(0xFFE98FB5),\r\n+    colorCode30: Color(0xFFE1699C),\r\n+    colorCode40: Color(0xFFDA4483),\r\n+    colorCode50: Color(0xFFD21E6A),\r\n+    colorCode60: Color(0xFFAF1958),\r\n+    colorCode70: Color(0xFF8C1447),\r\n+    colorCode80: Color(0xFF690F35),\r\n+    colorCode90: Color(0xFF460A23),\r\n+    colorCode100: Color(0xFF2A0615),\r\n+  });\r\n+}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1756054853008,
+            "name": "Commit-0",
+            "content": "clas "
+        }
+    ]
+}

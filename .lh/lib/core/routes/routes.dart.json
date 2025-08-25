@@ -1,0 +1,78 @@
+{
+    "sourceFile": "lib/core/routes/routes.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 15,
+            "patches": [
+                {
+                    "date": 1756055760360,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1756055961967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,3 @@\n+class Routes {\r\n+  static \r\n+}\r\n"
+                },
+                {
+                    "date": 1756055969198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,3 @@\n+class Routes {\r\n+  static String loginScreen=\"\"\r\n+}\r\n"
+                },
+                {
+                    "date": 1756055976095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,3 @@\n+class Routes {\r\n+  static String loginScreen=\"/loginScreen\";\r\n+}\r\n"
+                },
+                {
+                    "date": 1756055983637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,4 @@\n+class Routes {\r\n+  static String loginScreen=\"/loginScreen\";\r\n+  static String registerScreen=\"/loginScreen\";\r\n+}\r\n"
+                },
+                {
+                    "date": 1756055990777,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,4 @@\n+class Routes {\r\n+  static String loginScreen=\"/loginScreen\";\r\n+  static String registerScreen=\"/registerScreen\";\r\n+}\r\n"
+                },
+                {
+                    "date": 1756055996342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,5 @@\n+class Routes {\r\n+  static String loginScreen=\"/loginScreen\";\r\n+  static String registerScreen=\"/registerScreen\";\r\n+  static \r\n+}\r\n"
+                },
+                {
+                    "date": 1756056003486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,5 @@\n+class Routes {\r\n+  static String loginScreen=\"/loginScreen\";\r\n+  static String registerScreen=\"/registerScreen\";\r\n+  static String homeScreen=\"\";\r\n+}\r\n"
+                },
+                {
+                    "date": 1756056012626,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,6 @@\n+class Routes {\r\n+  static String loginScreen=\"/loginScreen\";\r\n+  static String registerScreen=\"/registerScreen\";\r\n+  static String homeScreen=\"homeScreen\";\r\n+  static String \r\n+}\r\n"
+                },
+                {
+                    "date": 1756056018613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,6 @@\n+class Routes {\r\n+  static String loginScreen=\"/loginScreen\";\r\n+  static String registerScreen=\"/registerScreen\";\r\n+  static String homeScreen=\"homeScreen\";\r\n+  static String detailsScreen\r\n+}\r\n"
+                },
+                {
+                    "date": 1756056024404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,6 @@\n+class Routes {\r\n+  static String loginScreen=\"/loginScreen\";\r\n+  static String registerScreen=\"/registerScreen\";\r\n+  static String homeScreen=\"/homeScreen\";\r\n+  static String detailsScreen=\"/\"\r\n+}\r\n"
+                },
+                {
+                    "date": 1756056033744,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,7 @@\n+class Routes {\r\n+  static String loginScreen=\"/loginScreen\";\r\n+  static String registerScreen=\"/registerScreen\";\r\n+  static String homeScreen=\"/homeScreen\";\r\n+  static String detailsScreen=\"/detailsScreen\";\r\n+  static String \r\n+}\r\n"
+                },
+                {
+                    "date": 1756056048106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,7 @@\n+class Routes {\r\n+  static String loginScreen=\"/loginScreen\";\r\n+  static String registerScreen=\"/registerScreen\";\r\n+  static String homeScreen=\"/homeScreen\";\r\n+  static String detailsScreen=\"/detailsScreen\";\r\n+  static String cartScreen\r\n+}\r\n"
+                },
+                {
+                    "date": 1756056060216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,7 @@\n+class Routes {\r\n+  static String loginScreen=\"/loginScreen\";\r\n+  static String registerScreen=\"/registerScreen\";\r\n+  static String homeScreen=\"/homeScreen\";\r\n+  static String detailsScreen=\"/detailsScreen\";\r\n+  \r\n+}\r\n"
+                },
+                {
+                    "date": 1756056131391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n class Routes {\r\n-  static String loginScreen=\"/loginScreen\";\r\n+  static final  String loginScreen=\"/loginScreen\";\r\n   static String registerScreen=\"/registerScreen\";\r\n   static String homeScreen=\"/homeScreen\";\r\n   static String detailsScreen=\"/detailsScreen\";\r\n }\r\n"
+                },
+                {
+                    "date": 1756056138961,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,6 @@\n+class Routes {\r\n+  static final  String loginScreen=\"/loginScreen\";\r\n+  static final String registerScreen=\"/registerScreen\";\r\n+  static final String homeScreen=\"/homeScreen\";\r\n+  static final String detailsScreen=\"/detailsScreen\";\r\n+}\r\n"
+                }
+            ],
+            "date": 1756055760360,
+            "name": "Commit-0",
+            "content": "class Ro"
+        }
+    ]
+}
