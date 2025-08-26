@@ -7,6 +7,13 @@ class AppTheme {
     progressIndicatorTheme: ProgressIndicatorThemeData(
       color: AppColors.pink[AppColors.colorCode50],
     ),
+    tabBarTheme: TabBarThemeData(
+      splashFactory: NoSplash.splashFactory,
+      tabAlignment: TabAlignment.start,
+      dividerHeight: 0,
+      labelColor: AppColors.pink[AppColors.colorCode40],
+      indicatorColor: AppColors.pink,
+    ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ButtonStyle(
         backgroundColor: WidgetStateProperty.all(
@@ -87,6 +94,48 @@ class AppTheme {
             color: AppColors.white,
           ),
         ),
+      ),
+    ),
+    bottomNavigationBarTheme: BottomNavigationBarThemeData(
+      elevation: 0,
+      selectedItemColor: AppColors.pink[AppColors.colorCode50],
+      showSelectedLabels: true,
+      showUnselectedLabels: true,
+      unselectedItemColor: AppColors.gray,
+      selectedLabelStyle: TextStyle(
+        fontSize: 14,
+        color: AppColors.pink[AppColors.colorCode50],
+        fontWeight: FontWeight.bold,
+      ),
+      unselectedLabelStyle: TextStyle(fontSize: 14, color: AppColors.gray),
+    ),
+    textTheme: const TextTheme(
+      titleLarge: TextStyle(
+        color: AppColors.black,
+        fontWeight: FontWeight.w500,
+        fontSize: 20,
+      ),
+
+      labelMedium: TextStyle(
+        color: AppColors.black,
+        fontWeight: FontWeight.w400,
+        fontSize: 14,
+      ),
+      labelSmall: TextStyle(
+        color: AppColors.white,
+        fontWeight: FontWeight.w500,
+        fontSize: 13,
+      ),
+      bodyLarge: TextStyle(
+        color: AppColors.black,
+        fontWeight: FontWeight.w400,
+        fontSize: 12,
+      ),
+
+      bodySmall: TextStyle(
+        color: AppColors.gray,
+        fontWeight: FontWeight.w400,
+        fontSize: 13,
       ),
     ),
   );
