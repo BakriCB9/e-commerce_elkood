@@ -27,7 +27,6 @@ class HomeCubit extends Cubit<HomeState> {
                   ),
             ),
           );
-          print("we are in base success State ");
         }
       case FailureResult():
         emit(

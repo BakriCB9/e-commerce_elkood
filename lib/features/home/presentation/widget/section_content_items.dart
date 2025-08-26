@@ -1,5 +1,5 @@
 import 'package:ecommerce_elk/features/home/domain/entity/product_entity.dart';
-import 'package:ecommerce_elk/features/home/presentation/widget/item_of_grid_view.dart';
+import 'package:ecommerce_elk/features/home/presentation/widget/section_grid_view.dart';
 import 'package:flutter/material.dart';
 
 class SectionContentItems extends StatefulWidget {
@@ -29,13 +29,13 @@ class _SectionContentItemsState extends State<SectionContentItems>
   @override
   Widget build(BuildContext context) {
     return Column(
+      spacing: 20,
       children: [
         TabBar(
           isScrollable: true,
           controller: _controller,
           tabs: widget.data.$1.map((e) => Text(e)).toList(),
         ),
-        SizedBox(height: 20),
         Expanded(
           child: TabBarView(
             controller: _controller,
@@ -43,7 +43,7 @@ class _SectionContentItemsState extends State<SectionContentItems>
               listOfFilter = widget.data.$2
                   .where((item) => item.category == widget.data.$1[index])
                   .toList();
-              return Item(listOfProducts: listOfFilter);
+              return SectionGridView(listOfProducts: listOfFilter);
             }),
           ),
         ),
@@ -52,23 +52,3 @@ class _SectionContentItemsState extends State<SectionContentItems>
   }
 }
 
-class Item extends StatelessWidget {
-  final List<ProductEntity>? listOfProducts;
-  const Item({required this.listOfProducts, super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return GridView.builder(
-      itemCount: listOfProducts?.length,
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 2,
-        mainAxisSpacing: 10,
-        crossAxisSpacing: 10,
-        childAspectRatio: 2 / 3,
-      ),
-      itemBuilder: (context, index) {
-        return ItemOfGridView(productEntity: listOfProducts![index]);
-      },
-    );
-  }
-}

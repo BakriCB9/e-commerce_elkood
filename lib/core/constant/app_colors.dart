@@ -17,6 +17,7 @@ class AppColors{
   static const Color white=Color(0xFFF9F9F9);
   static const Color lightPink = Color(0xFFFCE4EC);
   static const Color gray = Color(0xFF5D5D5D);
+  static const Color green = Color(0xFF00A550);
 
   static const MaterialColor pink = MaterialColor(0xFFD2166A, <int, Color>{
     baseColor: Color(0xFFF6D2E1),
