@@ -8,4 +8,5 @@ class AppValues {
   // shared preferences keys
   static const String email = "email";
   static const String userName = "userName";
+  static const String cartItemsKey = 'cart_items';
 }

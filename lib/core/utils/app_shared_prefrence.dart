@@ -1,6 +1,5 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
-
 class SharedPreferencesUtils {
   static late SharedPreferences sharedPreferences;
 
@@ -8,8 +7,10 @@ class SharedPreferencesUtils {
     sharedPreferences = await SharedPreferences.getInstance();
   }
 
-  static Future<bool> saveData(
-      {required String key, required dynamic value}) async {
+  static Future<bool> saveData({
+    required String key,
+    required dynamic value,
+  }) async {
     if (value is int) {
       return await sharedPreferences.setInt(key, value);
     } else if (value is double) {
@@ -29,8 +30,7 @@ class SharedPreferencesUtils {
     return sharedPreferences.get(key);
   }
 
-  static Future<String?> getString(String key) async {
-    final prefs = await SharedPreferences.getInstance();
-    return prefs.getString(key);
+  static String? getString(String key) {
+    return sharedPreferences.getString(key);
   }
 }

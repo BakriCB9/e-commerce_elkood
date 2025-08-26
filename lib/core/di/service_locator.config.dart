@@ -14,6 +14,8 @@ import 'package:ecommerce_elk/core/network/remote/api_manager.dart' as _i464;
 import 'package:ecommerce_elk/core/network/remote/dio_module.dart' as _i225;
 import 'package:ecommerce_elk/features/auth/presentation/view_model/cubit/auth_cubit.dart'
     as _i429;
+import 'package:ecommerce_elk/features/cart/presentation/view_model.dart/cubit/cart_cubit.dart'
+    as _i971;
 import 'package:ecommerce_elk/features/home/data/data_source/remote/home_remote_data_source.dart'
     as _i157;
 import 'package:ecommerce_elk/features/home/data/data_source/remote/home_remote_data_source_impl.dart'
@@ -39,6 +41,7 @@ extension GetItInjectableX on _i174.GetIt {
     final gh = _i526.GetItHelper(this, environment, environmentFilter);
     final dioModule = _$DioModule();
     gh.factory<_i429.AuthCubit>(() => _i429.AuthCubit());
+    gh.factory<_i971.CartCubit>(() => _i971.CartCubit());
     gh.singleton<_i464.ApiManager>(() => _i464.ApiManager());
     gh.lazySingleton<_i361.Dio>(() => dioModule.provideDio());
     gh.lazySingleton<_i528.PrettyDioLogger>(

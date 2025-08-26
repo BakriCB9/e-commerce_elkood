@@ -1,8 +1,11 @@
 import 'package:ecommerce_elk/core/constant/app_assets.dart';
 import 'package:ecommerce_elk/core/constant/app_colors.dart';
 import 'package:ecommerce_elk/core/utils/custom_cache_network_image.dart';
+import 'package:ecommerce_elk/features/cart/presentation/model/cart_item_model.dart';
+import 'package:ecommerce_elk/features/cart/presentation/view_model.dart/cubit/cart_cubit.dart';
 import 'package:ecommerce_elk/features/home/domain/entity/product_entity.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 
 class ItemOfGridView extends StatelessWidget {
@@ -26,8 +29,7 @@ class ItemOfGridView extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(
-              child: Align(
-                alignment: Alignment.center,
+              child: Center(
                 child: CustomCacheNetworkImage(imageUrl: productEntity.image),
               ),
             ),
@@ -45,7 +47,20 @@ class ItemOfGridView extends StatelessWidget {
                 padding: EdgeInsets.zero,
                 textStyle: TextStyle(fontSize: 15),
               ),
-              onPressed: () {},
+              onPressed: () => context.read<CartCubit>().addProductToCart(
+                CartItemModel(
+                  id: productEntity.id,
+                  title: productEntity.title,
+                  price: productEntity.price,
+                  description: productEntity.description,
+                  category: productEntity.category,
+                  image: productEntity.image,
+                  rating: RatingItemCart(
+                    rate: productEntity.rating.rate,
+                    count: productEntity.rating.count,
+                  ),
+                ),
+              ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
