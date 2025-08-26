@@ -1,10 +1,13 @@
 import 'package:ecommerce_elk/core/base_state/base_state.dart';
+import 'package:ecommerce_elk/core/constant/app_colors.dart';
 import 'package:ecommerce_elk/core/routes/routes.dart';
 import 'package:ecommerce_elk/features/home/domain/entity/product_entity.dart';
 import 'package:ecommerce_elk/features/home/presentation/view_model/cubit/home_cubit.dart';
+import 'package:ecommerce_elk/features/home/presentation/widget/loading_shimmer_effect.dart';
 import 'package:ecommerce_elk/features/home/presentation/widget/section_content_items.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:shimmer/shimmer.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -23,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen>
         builder: (context, state) {
           //loading
           if (state.productState is BaseLoadingState) {
-            return Center(child: CircularProgressIndicator());
+            return LoadingShimmerEffect();
           }
           //success
           else if (state.productState is BaseSuccessState) {
