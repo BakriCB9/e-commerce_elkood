@@ -5,7 +5,6 @@ import 'package:ecommerce_elk/core/routes/routes.dart';
 import 'package:ecommerce_elk/core/theme/app_theme.dart';
 import 'package:ecommerce_elk/core/utils/app_shared_prefrence.dart';
 import 'package:ecommerce_elk/core/utils/bloc_observer.dart';
-import 'package:ecommerce_elk/features/auth/presentation/view/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -26,7 +25,9 @@ class MyApp extends StatelessWidget {
       onGenerateRoute: RouteGenerator.getRoutes,
       theme: AppTheme.lightTheme,
       title: AppValues.appTitle,
-      initialRoute: Routes.loginScreen,
+      initialRoute: SharedPreferencesUtils.getString(AppValues.email) == null
+          ? Routes.loginScreen
+          : Routes.appSection,
     );
   }
 }
